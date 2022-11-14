@@ -7,16 +7,25 @@ public class SameString {
         t = in.nextInt();
         while (t!=0){
             String str = in.next();
-            int len = str.length()-1;
-            int lim = (str.length()/2)+1;
-            for (int i=0;i<=lim;i++){
-                if (str.charAt(i) != str.charAt(len-i)){
-                    System.out.println("No");
-                    return;
-                }
-            }
-            System.out.println("Yes");
+            int i = str.length()-1;
+            int j = 0;
+            if(check(str, i, j))
+                System.out.println("Yes");
+            else
+                System.out.println("No");
             t--;
         }
     }
+    static boolean check(String str, int i, int j){
+        if (str.charAt(i) != str.charAt(j)){
+            return false;
+        }
+        if (i == j) {
+            return true;
+        }
+        if (i > j)
+            check(str,i-1,j+1);
+        return true;
+    }
+
 }
