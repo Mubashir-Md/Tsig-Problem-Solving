@@ -1,6 +1,7 @@
 import java.util.*;
 import java.io.*;
 
+//Question : You are given a M∗N matrix, and a variable K, print the resultant matrix after scalar multiplication.
 public class ScalarMultiply {
     public static void main(String args[]) throws IOException {
         //You are given a M ∗ N matrix, and a variable K , print the resultant matrix after scalar multiplication.

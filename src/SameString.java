@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Question : PrepBuddy is fascinated with the type of strings that are the same when read from beginning to end and from end to beginning.
+//Given a string, your task is to help PrepBuddy decide whether the string will fascinate him or not.
 public class SameString {
     public static void main(String[] args) {
         int t;
